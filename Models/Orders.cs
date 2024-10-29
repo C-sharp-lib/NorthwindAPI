@@ -15,6 +15,7 @@ namespace NorthwindApplication.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int OrderID { get; set; }
         public string? CustomerID { get; set; }
+        public Customers? Customers { get; set; }
         public int? EmployeeID { get; set; }
         public DateTime? OrderDate { get; set; }
         public DateTime? RequiredDate { get; set; }
